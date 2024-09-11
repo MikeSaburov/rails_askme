@@ -16,5 +16,6 @@ ActiveRecord::Schema[7.2].define(version: 2024_09_07_090154) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_questions_on_user_id"
   end
 end
